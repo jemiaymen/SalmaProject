@@ -6,6 +6,7 @@ app.courseadd = kendo.observable({
 (function(parent) {
     var courseaddModel = kendo.observable({
         fields: {
+            img: '',
             des: '',
             title: '',
         },

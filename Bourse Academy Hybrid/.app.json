@@ -70,6 +70,13 @@
               "title": "Description",
               "inputType": "text",
               "placeholder": "Description"
+            },
+            {
+              "type": "field",
+              "name": "img",
+              "title": "Image",
+              "inputType": "text",
+              "placeholder": "Image"
             }
           ],
           "name": "courseaddModel",
