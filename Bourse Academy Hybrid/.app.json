@@ -1,15 +1,108 @@
 {
   "type": "kendo-ui-mobile",
-  "isNew": true,
+  "views": [
+    {
+      "type": "view",
+      "components": [
+        {
+          "type": "authentication",
+          "name": "homeModel",
+          "dataProvider": "defaultProvider",
+          "emailLabel": "Email",
+          "passwordLabel": "Password",
+          "signinLabel": "Sign In",
+          "signinRedirect": "corses",
+          "enableRegistration": true,
+          "gotoRegisterLabel": "Register",
+          "registerEmailLabel": "Email",
+          "registerPasswordLabel": "Password",
+          "registerNameLabel": "Name",
+          "registerLabel": "Register",
+          "registerRedirect": "home",
+          "gotoSigninLabel": "Sign In"
+        }
+      ],
+      "name": "home",
+      "title": "Welcome",
+      "addToNavigation": true,
+      "icon": "home"
+    },
+    {
+      "type": "view",
+      "components": [
+        {
+          "type": "list",
+          "name": "corsesModel",
+          "dataProvider": "defaultProvider",
+          "collection": "Corses",
+          "imageField": "img",
+          "headerField": "title",
+          "subHeaderField": "desc",
+          "masterDetails": true,
+          "detailHeaderField": "title",
+          "detailDescriptionField": "desc",
+          "detailImageField": "img",
+          "pullToRefresh": true,
+          "endlessScroll": true
+        }
+      ],
+      "name": "corses",
+      "title": "Courses",
+      "addToNavigation": true,
+      "icon": "bookmarks"
+    },
+    {
+      "type": "view",
+      "components": [
+        {
+          "type": "form",
+          "components": [
+            {
+              "type": "field",
+              "name": "title",
+              "title": "Title",
+              "inputType": "text",
+              "placeholder": "Title"
+            },
+            {
+              "type": "field",
+              "name": "desc",
+              "title": "Description",
+              "inputType": "text",
+              "placeholder": "Description"
+            },
+            {
+              "type": "field",
+              "name": "img",
+              "title": "img",
+              "inputType": "text",
+              "placeholder": "img"
+            }
+          ],
+          "name": "addCoursesModel",
+          "submitButton": "Register",
+          "cancelButton": "Cancel"
+        }
+      ],
+      "name": "addCourses",
+      "title": "Add Courses",
+      "addToNavigation": true,
+      "icon": "add"
+    }
+  ],
   "dataProviders": [
     {
       "type": "dataProvider",
-      "title": "DefaultProvider",
       "name": "defaultProvider",
+      "title": "DefaultProvider",
       "source": "everlive",
-      "offlineStorage": true,
       "everliveKey": "iM6duqamC76y6gEu",
-      "everliveUrl": ""
+      "everliveUrl": "//platform.telerik.com/bs-api/v1/",
+      "offlineStorage": true
     }
-  ]
+  ],
+  "name": "kendoUiMobileApp",
+  "navigation": "drawer",
+  "view": "home",
+  "skin": "flat"
 }
