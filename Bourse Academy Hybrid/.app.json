@@ -66,26 +66,19 @@
             },
             {
               "type": "field",
-              "name": "desc",
+              "name": "des",
               "title": "Description",
               "inputType": "text",
               "placeholder": "Description"
-            },
-            {
-              "type": "field",
-              "name": "img",
-              "title": "img",
-              "inputType": "text",
-              "placeholder": "img"
             }
           ],
-          "name": "addCoursesModel",
+          "name": "courseaddModel",
           "submitButton": "Register",
           "cancelButton": "Cancel"
         }
       ],
-      "name": "addCourses",
-      "title": "Add Courses",
+      "name": "courseadd",
+      "title": "Add Course",
       "addToNavigation": true,
       "icon": "add"
     }
