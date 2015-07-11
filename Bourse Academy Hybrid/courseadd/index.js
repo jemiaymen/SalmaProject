@@ -18,42 +18,52 @@ app.courseadd = kendo.observable({
             img: '',
             desc: '',
             title: '',
- 
-        getfile : function(){
-            
-        },
+        validateData: function(data) {
+                if (!data.img || !data.desc || !data.title) {
+                    alert('Error All Fields are Required');
+                    return false;
+                }
+
+                return true;
+            },
         submit: function() {
+            if(!courseaddModel.validateData(courseaddModel)) {
+                return ;
+            }
             var el = app.data.defaultProvider
             var data = el.data('Corses');
 			var imgs = document.getElementById("img").files[0];
 			var reader = new FileReader();
             var file = {
-                    "Filename":courseaddModel.img,
+                    "Filename":imgs.name,
                     "ContentType":imgs.type,
                     "base64": ""
                     };
+            reader.readAsDataURL(imgs);
 			reader.onload = function() {
                 file.base64 = reader.result.split(',')[1];
-                console.log( file);
+                el.Files.create(file,
+                function (dt) {
+                    console.log( dt);
+                    data.create({ 'img' : dt.Id ,'desc' : courseaddModel.desc ,'title' : courseaddModel.title  },
+                    function(d){
+                        console.log( d);
+                        courseaddModel.rst();
+                    },
+                    function(err){
+                       console.log( err);
+                    });
+                },
+                function (rr) {
+                    console.log( rr);
+                });
+
             };
             
-            reader.readAsDataURL(imgs);
-   			el.Files.create(file,
-                function (data) {
-                    alert(JSON.stringify(data));
-                },
-                function (error) {
-                    alert(JSON.stringify(error));
-             });
-            return;
-            data.create({ 'img' : courseaddModel.img ,'desc' : courseaddModel.desc ,'title' : courseaddModel.title  },
-                function(data){
-                    alert("Courses Add With Success");
-                	courseaddModel.rst();
-                },
-                function(error){
-                    alert(JSON.stringify(error));
-                });
+            
+   			
+            
+            
                 
         },
         cancel: function() {
