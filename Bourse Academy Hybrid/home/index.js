@@ -78,10 +78,18 @@ app.home = kendo.observable({
                 }
 
                 provider.Users.register(email, password, attrs, successHandler, init);
+                alert("Register Done you can Login");
+                homeModel.toggleView();
             },
             toggleView: function() {
                 mode = mode === 'signin' ? 'register' : 'signin';
+                
                 init();
+                homeModel.rst();
+            }, 
+            rst : function(){
+              var frm = document.getElementById('frmhome');
+              frm.reset();  
             }
         });
 
