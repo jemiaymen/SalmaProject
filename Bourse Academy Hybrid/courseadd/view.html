@@ -4,17 +4,17 @@
             <ul class="form-content" data-role="listview" data-style="inset">
                 <li>
                     <label>Title
-                        <input data-bind="value: courseaddModel.fields.title" placeholder="Title" type="text">
+                        <input data-bind="value: courseaddModel.title" placeholder="Title" type="text">
                     </label>
                 </li>
                 <li>
                     <label>Description
-                        <input data-bind="value: courseaddModel.fields.des" placeholder="Description" type="text">
+                        <textarea data-bind="value: courseaddModel.desc"></textarea>
                     </label>
                 </li>
                 <li>
                     <label>Image
-                        <input data-bind="value: courseaddModel.fields.img" placeholder="Image" type="text">
+                        <input data-bind="value: courseaddModel.img " type="file" id="img">
                     </label>
                 </li>
             </ul>
@@ -23,6 +23,8 @@
                 <a data-role="button" data-bind="events: { click: courseaddModel.cancel }">Cancel</a>
                 <a class="km-state-active" data-role="button" data-bind="events: { click: courseaddModel.submit }">Register</a>
             </div>
+            
         </form>
     </div>
+    
 </div>
