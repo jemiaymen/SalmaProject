@@ -2,6 +2,7 @@
 
 app.corses = kendo.observable({
     onShow: function() {
+       /*
         var au = app.data.defaultProvider.authentication.getAuthenticationStatus();
         if(au._result != null){
             if(au._result.status != "authenticated" ){
@@ -9,6 +10,7 @@ app.corses = kendo.observable({
              window.location.href = 'index.html';
          } 
         }
+         */
          
     }
     
