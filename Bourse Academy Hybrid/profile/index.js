@@ -6,9 +6,8 @@ app.profile = kendo.observable({
 (function(parent) {
     var profileModel = kendo.observable({
         fields: {
+            npassword: '',
             password: '',
-            email: '',
-            username: '',
         },
         submit: function() {}
     });

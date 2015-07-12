@@ -35,22 +35,14 @@
           "components": [
             {
               "type": "field",
-              "name": "username",
-              "title": "Username",
-              "inputType": "text",
-              "placeholder": "johndoe"
-            },
-            {
-              "type": "field",
-              "name": "email",
-              "title": "Email",
-              "inputType": "email",
-              "placeholder": "example@example.com"
-            },
-            {
-              "type": "field",
               "name": "password",
-              "title": "Password",
+              "title": "Old Password",
+              "inputType": "password"
+            },
+            {
+              "type": "field",
+              "name": "npassword",
+              "title": "New Password",
               "inputType": "password"
             }
           ],
