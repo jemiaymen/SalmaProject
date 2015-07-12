@@ -31,30 +31,6 @@
       "type": "view",
       "components": [
         {
-          "type": "list",
-          "name": "corsesModel",
-          "dataProvider": "defaultProvider",
-          "collection": "Corses",
-          "imageField": "img",
-          "headerField": "title",
-          "subHeaderField": "desc",
-          "masterDetails": true,
-          "detailHeaderField": "title",
-          "detailDescriptionField": "desc",
-          "detailImageField": "img",
-          "pullToRefresh": true,
-          "endlessScroll": true
-        }
-      ],
-      "name": "corses",
-      "title": "Courses",
-      "addToNavigation": true,
-      "icon": "bookmarks"
-    },
-    {
-      "type": "view",
-      "components": [
-        {
           "type": "form",
           "components": [
             {
@@ -84,6 +60,30 @@
       ],
       "name": "profile",
       "title": "Profile",
+      "addToNavigation": true,
+      "icon": "contacts"
+    },
+    {
+      "type": "view",
+      "components": [
+        {
+          "type": "list",
+          "name": "corsesModel",
+          "dataProvider": "defaultProvider",
+          "collection": "Corses",
+          "imageField": "img",
+          "headerField": "title",
+          "subHeaderField": "desc",
+          "masterDetails": true,
+          "detailHeaderField": "title",
+          "detailDescriptionField": "desc",
+          "detailImageField": "img",
+          "pullToRefresh": true,
+          "endlessScroll": true
+        }
+      ],
+      "name": "corses",
+      "title": "Courses",
       "addToNavigation": true,
       "icon": "bookmarks"
     }
