@@ -101,3 +101,15 @@
     max-width: 100%;
     word-wrap: break-word;
 }
+.km-ios .km-view .km-navbar {
+    background-color: rgb(255, 148, 0);
+}
+.km-android .km-view .km-navbar {
+    background-color: rgb(255, 148, 0);
+}
+.km-wp .km-view .km-navbar {
+    background-color: rgb(255, 148, 0);
+}
+.km-flat .km-view .km-navbar {
+    background-color: rgb(255, 148, 0);
+}
