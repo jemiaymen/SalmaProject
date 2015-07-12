@@ -1,15 +1,15 @@
 <div data-role="view" data-title="Profile" data-layout="main" data-model="app.profile" data-show="app.profile.onShow">
     <div id="profileModel" class="form-view">
-        <form>
+        <form id="frmp">
             <ul class="form-content" data-role="listview" data-style="inset">
                 <li>
                     <label>Old Password
-                        <input data-bind="value: profileModel.fields.password" type="password">
+                        <input data-bind="value: profileModel.password" type="password">
                     </label>
                 </li>
                 <li>
                     <label>New Password
-                        <input data-bind="value: profileModel.fields.npassword" type="password">
+                        <input data-bind="value: profileModel.npassword" type="password">
                     </label>
                 </li>
             </ul>
