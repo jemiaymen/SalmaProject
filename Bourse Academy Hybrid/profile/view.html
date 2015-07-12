@@ -1,0 +1,28 @@
+<div data-role="view" data-title="Profile" data-layout="main" data-model="app.profile" data-show="app.profile.onShow">
+    <div id="profileModel" class="form-view">
+        <form>
+            <ul class="form-content" data-role="listview" data-style="inset">
+                <li>
+                    <label>Username
+                        <input data-bind="value: profileModel.fields.username" placeholder="johndoe" type="text">
+                    </label>
+                </li>
+                <li>
+                    <label>Email
+                        <input data-bind="value: profileModel.fields.email" placeholder="mail@domain.com" type="text">
+                    </label>
+                </li>
+                <li>
+                    <label>Password
+                        <input data-bind="value: profileModel.fields.password" type="password">
+                    </label>
+                </li>
+            </ul>
+
+            <div class="button-group">
+                <a data-role="button" data-bind="events: { click: profileModel.cancel }">Cancel</a>
+                <a class="km-state-active" data-role="button" data-bind="events: { click: profileModel.submit }">Update</a>
+            </div>
+        </form>
+    </div>
+</div>

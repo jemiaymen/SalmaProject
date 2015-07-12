@@ -1,19 +1,7 @@
 'use strict';
 
 app.corses = kendo.observable({
-    onShow: function() {
-       /*
-        var au = app.data.defaultProvider.authentication.getAuthenticationStatus();
-        if(au._result != null){
-            if(au._result.status != "authenticated" ){
-             alert("you must Login !");
-             window.location.href = 'index.html';
-         } 
-        }
-         */
-         
-    }
-    
+    onShow: function() {}
 });
 (function(parent) {
     var dataProvider = app.data.defaultProvider,
