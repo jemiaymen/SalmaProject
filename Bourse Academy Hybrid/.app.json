@@ -31,42 +31,6 @@
       "type": "view",
       "components": [
         {
-          "type": "form",
-          "components": [
-            {
-              "type": "field",
-              "name": "username",
-              "title": "Username",
-              "inputType": "text",
-              "placeholder": "johndoe"
-            },
-            {
-              "type": "field",
-              "name": "email",
-              "title": "Email",
-              "inputType": "text",
-              "placeholder": "name@mail.com"
-            },
-            {
-              "type": "field",
-              "name": "password",
-              "title": "Password",
-              "inputType": "password"
-            }
-          ],
-          "name": "profileModel",
-          "submitButton": "Update"
-        }
-      ],
-      "name": "profile",
-      "title": "Profile",
-      "addToNavigation": true,
-      "icon": "contacts"
-    },
-    {
-      "type": "view",
-      "components": [
-        {
           "type": "list",
           "name": "corsesModel",
           "dataProvider": "defaultProvider",
@@ -95,35 +59,33 @@
           "components": [
             {
               "type": "field",
-              "name": "title",
-              "title": "Title",
+              "name": "username",
+              "title": "Username",
               "inputType": "text",
-              "placeholder": "Title"
+              "placeholder": "johndoe"
             },
             {
               "type": "field",
-              "name": "des",
-              "title": "Description",
-              "inputType": "text",
-              "placeholder": "Description"
+              "name": "email",
+              "title": "Email",
+              "inputType": "email",
+              "placeholder": "example@example.com"
             },
             {
               "type": "field",
-              "name": "img",
-              "title": "Image",
-              "inputType": "text",
-              "placeholder": "Image"
+              "name": "password",
+              "title": "Password",
+              "inputType": "password"
             }
           ],
-          "name": "courseaddModel",
-          "submitButton": "Register",
-          "cancelButton": "Cancel"
+          "name": "profileModel",
+          "submitButton": "Update"
         }
       ],
-      "name": "courseadd",
-      "title": "Add Course",
+      "name": "profile",
+      "title": "Profile",
       "addToNavigation": true,
-      "icon": "add"
+      "icon": "bookmarks"
     }
   ],
   "dataProviders": [
