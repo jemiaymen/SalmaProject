@@ -10,8 +10,7 @@ app.profile = kendo.observable({
             email: '',
             username: '',
         },
-        submit: function() {},
-        cancel: function() {}
+        submit: function() {}
     });
 
     parent.set('profileModel', profileModel);

@@ -45,7 +45,7 @@
               "name": "email",
               "title": "Email",
               "inputType": "text",
-              "placeholder": "mail@domain.com"
+              "placeholder": "name@mail.com"
             },
             {
               "type": "field",
@@ -55,8 +55,7 @@
             }
           ],
           "name": "profileModel",
-          "submitButton": "Update",
-          "cancelButton": "Cancel"
+          "submitButton": "Update"
         }
       ],
       "name": "profile",
@@ -87,6 +86,44 @@
       "title": "Courses",
       "addToNavigation": true,
       "icon": "bookmarks"
+    },
+    {
+      "type": "view",
+      "components": [
+        {
+          "type": "form",
+          "components": [
+            {
+              "type": "field",
+              "name": "title",
+              "title": "Title",
+              "inputType": "text",
+              "placeholder": "Title"
+            },
+            {
+              "type": "field",
+              "name": "des",
+              "title": "Description",
+              "inputType": "text",
+              "placeholder": "Description"
+            },
+            {
+              "type": "field",
+              "name": "img",
+              "title": "Image",
+              "inputType": "text",
+              "placeholder": "Image"
+            }
+          ],
+          "name": "courseaddModel",
+          "submitButton": "Register",
+          "cancelButton": "Cancel"
+        }
+      ],
+      "name": "courseadd",
+      "title": "Add Course",
+      "addToNavigation": true,
+      "icon": "add"
     }
   ],
   "dataProviders": [

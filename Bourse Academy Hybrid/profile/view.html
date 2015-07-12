@@ -9,7 +9,7 @@
                 </li>
                 <li>
                     <label>Email
-                        <input data-bind="value: profileModel.fields.email" placeholder="mail@domain.com" type="text">
+                        <input data-bind="value: profileModel.fields.email" placeholder="name@mail.com" type="text">
                     </label>
                 </li>
                 <li>
@@ -20,7 +20,6 @@
             </ul>
 
             <div class="button-group">
-                <a data-role="button" data-bind="events: { click: profileModel.cancel }">Cancel</a>
                 <a class="km-state-active" data-role="button" data-bind="events: { click: profileModel.submit }">Update</a>
             </div>
         </form>
